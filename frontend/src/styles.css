@@ -1,0 +1,14 @@
+:root{--bg:#f5f6fa;--card:#fff;--tx:#1d2433;--mut:#6b7385;--br:#dde1ea;--pri:#3b5bdb;--ok:#2b8a3e;--bad:#c92a2a;--warn:#e67700}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--tx);font:15px/1.5 system-ui,Segoe UI,Roboto,sans-serif}
+.page{max-width:860px;margin:0 auto;padding:24px 16px 80px}header{display:flex;align-items:center;gap:12px}h1{margin:0;font-size:24px}h2,h3{margin:0}
+.steps{display:flex;gap:8px;list-style:none;padding:0;margin:14px 0}.steps li{padding:4px 10px;border-radius:99px;background:#e9ecf3;color:var(--mut);font-size:13px}.steps li.on{background:var(--pri);color:#fff}.steps li.done{background:#d3f9d8;color:var(--ok)}
+.card{background:var(--card);border:1px solid var(--br);border-radius:12px;padding:16px;margin:14px 0}.card.approved{border-color:var(--ok)}.card.rejected{opacity:.55}
+.row{display:flex;align-items:center;justify-content:space-between;gap:8px;flex-wrap:wrap}.actions{justify-content:flex-start;margin-top:12px}
+textarea,input:not([type=radio]){width:100%;padding:8px;border:1px solid var(--br);border-radius:8px;font:inherit;margin:4px 0 10px}.mono{font-family:ui-monospace,Menlo,monospace;font-size:13px;background:#f8f9fb}
+label{display:block;font-size:12px;font-weight:600;color:var(--mut);text-transform:uppercase;letter-spacing:.04em;margin-top:6px}
+.opt{display:flex;gap:8px;align-items:center}.opt input[type=radio]{margin:0}.opt input:not([type=radio]){margin:3px 0}
+button{padding:8px 14px;border-radius:8px;border:1px solid transparent;font:inherit;cursor:pointer}button:disabled{opacity:.5;cursor:not-allowed}
+.primary{background:var(--pri);color:#fff}.ghost{background:#fff;border-color:var(--br)}.danger{background:#fff;border-color:var(--bad);color:var(--bad)}
+.pill{font-size:12px;padding:2px 10px;border-radius:99px}.pill.ok{background:#d3f9d8;color:var(--ok)}.pill.bad{background:#ffe3e3;color:var(--bad)}.pill.warn{background:#fff3bf;color:var(--warn)}
+.err{background:#ffe3e3;color:var(--bad);padding:10px;border-radius:8px}.issues{color:var(--bad);margin:6px 0;padding-left:20px;font-size:13px}.muted{color:var(--mut);font-size:13px}
+.out{background:#1d2433;color:#e6edf7;padding:12px;border-radius:8px;overflow:auto;font-size:12.5px}
